@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+  
+  body.dark-mode {
+    background-color:#121212;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+
+.container {
+    position: relative; /* Ensure relative positioning for the back button */
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #999;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+body.dark-mode .container {
+    position: relative; /* Ensure relative positioning for the back button */
+    background-color: #222;
+    border-radius: 8px;
+    border: 1px solid #111;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.logo-container {
+    margin-top: 0;
+    padding: 0;
+    text-align: left; /* Aligns the logo to the left */
+}
+
+
+.logo-container img{
+    width: 50px; /* Adjust width of the logo */
+    height: 50px; /* Maintains aspect ratio */
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #35B535;
+}
+
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #2cac4a ;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1e8135 ;
+}
+
+body.dark-mode input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #2cac4a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+body.dark-mode input[type="submit"]:hover {
+    background-color: #1e8135;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+body.dark-mode .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup.show {
+    display: block;
+}
+
+body.dark-mode .popup.show {
+    display: block;
+}
+
+.popup p {
+    margin: 0;
+}
+
+
+body.dark-mode .popup p {
+    margin: 0;
+}
+
+.popup .close {
+    margin-top: 10px;
+    background-color: #a81b1b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+body.dark-mode .popup .close {
+    margin-top: 10px;
+    background-color: #a81b1b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.popup .close:hover {
+    background-color: #8a1313;
+}
+
+
+.password-container {
+    position: relative;
+}
+
+.password-container input[type="password"] {
+    padding-right: 50px; /* Space for the checkbox */
+
+}
+
+.password-container label {
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust according to your design */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
